@@ -30,7 +30,7 @@ namespace ZaeTools.Unity.Editor
             "    }}\r\n" +
             "}}\r\n";
 
-        private static readonly Regex NamespaceRegex = new Regex("[^a-zA-Z0-9]");
+        private static readonly Regex NamespaceRegex = new Regex("[^a-zA-Z0-9.]");
 
         [MenuItem("Assets/Create/C# Script (namespaced)", priority = 80)]
         public static void CreateScript()
